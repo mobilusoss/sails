@@ -5,7 +5,7 @@
  * Module dependencies
  */
 
-var _ = require('@sailshq/lodash');
+var _ = require('lodash');
 var util = require('util');
 var path = require('path');
 var async = require('async');

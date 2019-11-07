@@ -3,7 +3,7 @@
  */
 var should = require('should');
 var assert = require('assert');
-var _ = require('@sailshq/lodash');
+var _ = require('lodash');
 
 var constants = require('../fixtures/constants');
 var customHooks = require('../fixtures/customHooks');
@@ -200,7 +200,7 @@ describe('app.initializeHooks()', function() {
 
     it('should add two `/foo` routes to the sails config', function() {
       var boundRoutes = sails.router._privateRouter.routes['get'];
-      assert(_.where(boundRoutes, {path: "/foo", method: "get"}).length === 3);
+      assert(_.filter(boundRoutes, {path: "/foo", method: "get"}).length === 3);
     });
 
     it('should bind the routes in the correct order', function(done) {
@@ -224,7 +224,7 @@ describe('app.initializeHooks()', function() {
 
     it('should add four `/foo` routes to the sails config', function() {
       var boundRoutes = sails.router._privateRouter.routes['get'];
-      assert(_.where(boundRoutes, {path: "/foo", method: "get"}).length === 5);
+      assert(_.filter(boundRoutes, {path: "/foo", method: "get"}).length === 5);
     });
 
     it('should bind the routes in the correct order', function(done) {

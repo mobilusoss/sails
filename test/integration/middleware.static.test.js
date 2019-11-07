@@ -2,7 +2,7 @@
  * Module dependencies
  */
 
-var _ = require('@sailshq/lodash');
+var _ = require('lodash');
 var request = require('request');
 var Sails = require('../../lib').Sails;
 var assert = require('assert');
