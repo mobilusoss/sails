@@ -2,7 +2,7 @@
  * Module dependencies
  */
 
-var _ = require('@sailshq/lodash');
+var _ = require('lodash');
 var request = require('request');
 var Sails = require('../../lib').Sails;
 var assert = require('assert');
@@ -91,7 +91,7 @@ describe('middleware :: ', function() {
           },
           function(err, response, body) {
             assert.equal(test_file.toString('utf-8'), body);
-            assert.equal(response.headers['content-type'], 'application/font-woff');
+            assert.equal(response.headers['content-type'], 'font/woff'); // https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
             return done();
           }
         );
