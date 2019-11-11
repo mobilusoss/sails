@@ -1,7 +1,7 @@
 {
   "name": "sails",
   "author": "Mike McNeil <@mikermcneil>",
-  "version": "0.12.14",
+  "version": "0.13.0",
   "description": "API-driven framework for building realtime apps, using MVC conventions (based on Express and Socket.io)",
   "homepage": "http://sailsjs.org",
   "keywords": [
@@ -73,9 +73,9 @@
     "rc": "^1.2.8",
     "reportback": "^2.0.2",
     "rttc": "^10.0.1",
-    "sails-disk": "~0.10.9",
-    "sails-hook-orm": "~1.0.9",
-    "sails-hook-sockets": "git+https://github.com/mobilusoss/sails-hook-sockets.git#classic",
+    "sails-disk": "git+https://github.com/mobilusoss/sails-disk.git#master",
+    "sails-hook-orm": "git+https://github.com/mobilusoss/sails-hook-orm.git#1.1.0",
+    "sails-hook-sockets": "git+https://github.com/mobilusoss/sails-hook-sockets.git#v0.14.0",
     "sails-stringfile": "~0.3.2",
     "sails-util": "~0.11.0",
     "semver": "5.1.0",
